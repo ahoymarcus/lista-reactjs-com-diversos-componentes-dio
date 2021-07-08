@@ -1,0 +1,16 @@
+.card {
+	width: 150px;
+	
+}
+
+.card-header, .card-body {
+	text-align: center;
+}
+
+.card-body {
+	border: 1px solid yellow;
+}
+
+.card-button {
+	margin-left: 10px;
+}
