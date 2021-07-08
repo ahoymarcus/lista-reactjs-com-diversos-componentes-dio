@@ -1,10 +1,13 @@
-const Item = () => {
+const Item = ( {children, item} ) => {
 	
 	
 	return (
-		<a href="/" className="hello-lista">
-			Item
-		</a>
+		<>
+			<a href="/" className="hello-lista">
+				{children} 
+			</a> 
+			- {item}
+		</>
 	);
 };
 
