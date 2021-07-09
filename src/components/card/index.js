@@ -1,5 +1,8 @@
 import { useState } from 'react';
+
 import './Card.css';
+import Button from '../button';
+
 
 
 const Card = () => {
@@ -21,19 +24,18 @@ const Card = () => {
 			<div className="card-body">
 				<h5 className="card-title">Card Title</h5>
 				
-				<button 
-					class="card-button" 
-					onClick={plus}
-				>
-					Plus
-				</button>
-				
-				<button 
-					class="card-button" 
-					onClick={minus}
-				>
-					Minus
-				</button>
+				<div className="button-container">
+					<Button 
+						onClick={plus}
+					>
+						Plus
+					</Button>
+					<Button 
+						onClick={minus}
+					>
+						Minus
+					</Button>
+				</div>
 				
 				<p className="card-text">{value}</p>
 			</div>
